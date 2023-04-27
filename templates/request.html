@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <style>
+        body {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        input[type="checkbox"] {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+        
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        form {
+            background-color: #acb9e8;
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+            border-radius: 4px;
+        }
+        
+        .choose label {
+            margin: 0;
+            font-weight: normal;
+        }
+        
+        .textinput {
+            font-size: 0.6em;
+            width: 100%;
+            max-width: 100%;
+            height: 7em;
+            margin-bottom: 2em;
+        }
+        
+        .submitbutton {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #2a5def;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 2em;
+            font-size: 0.7em;
+            margin-left: 17em;
+            font-weight: bold;
+            border-radius: 0.2em;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submitbutton:hover {
+            background-color: #4e4b52;
+            cursor: pointer;
+        }
+        
+        .c1 {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 10em;
+        }
+        
+        .date-picker-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .date-picker-container label {
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            margin-top: 0.7rem;
+        }
+        
+        .date-picker-container input[type="date"] {
+            width: 150px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 2rem;
+        }
+    </style>
+
+    <body>
+        <form class="mainform">
+
+
+            <div class="date-picker-container">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+            </div>
+
+
+            <div class="languages">
+                <div class="c1">
+                    <label>
+                    <input type="checkbox"  value="English"> Instagram
+                </label>
+                </div>
+                <div class="c1">
+                    <label>
+                        <input type="checkbox"  value="Arabic"> Reddit
+                        </label>
+
+                </div>
+
+
+
+            </div>
+            <div class="choose">
+
+                <div class="c1">
+                    <label>
+                    <input type="checkbox"  value="instagram"> Instagram
+                </label>
+                </div>
+
+
+
+                <div class="c1">
+                    <label>
+                        <input type="checkbox"  value="reddit"> Reddit
+                        </label>
+
+                </div>
+
+                <div class="c1">
+                    <label>
+                        <input type="checkbox" value="twitter"> Twitter
+                    </label>
+                </div>
+
+
+                <button class="submitbutton"> submit</button>
+            </div>
+        </form>
+
+    </body>
+
+</html>
